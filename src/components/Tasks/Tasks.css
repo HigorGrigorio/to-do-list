@@ -1,0 +1,48 @@
+.tasks {
+  margin-top: 30px;
+}
+
+.tasks li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  transition: all 100ms ease-in-out;
+}
+
+.tasks li:hover {
+  background: var(--gray-color);
+}
+
+.actions {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions .edit {
+  margin-right: 15px;
+  color: var(--dark-blue-color);
+  transition: all 100ms ease-in-out;
+}
+
+.actions .delete {
+  color: var(--crismon-color);
+  transition: all 100ms ease-in-out;
+}
+
+.tasks li:hover .edit, .tasks li:hover .delete {
+  color: #000;
+}
+
+.tasks li span {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.current {
+ background-color: red;
+}
